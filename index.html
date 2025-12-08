@@ -6,40 +6,72 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Investment Website</title>
-    <!-- <link rel="stylesheet" href="dashboard.css"> -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css" />
-    <!-- Template Stylesheet -->
 
 
-    <!-- ICONSCOUT CDN -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- CUSTOM CSS -->
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
 
-    <!-- My style sections -->
-    <style>
-      .nav-page {
-        display: none;
-        /* Hide all page sections by default */
-      }
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-      .nav-page.active {
-        display: block;
-        /* Show only the active page section */
-      }
-    </style>
+    <!-- Template Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Start another link -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css" />
+    <div class="item">
+      <!-- End another link -->
+
+      <!-- <link rel="stylesheet" href="dashboard.css"> -->
+
+      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+      <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+      <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css" />
+      <!-- Template Stylesheet -->
+
+
+
+      <!-- ICONSCOUT CDN -->
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css" />
+
+      <!-- Icon Font Stylesheet -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+      <!-- CUSTOM CSS -->
+
+
+      <!-- My style sections -->
+      <style>
+        .nav-page {
+          display: none;
+          /* Hide all page sections by default */
+        }
+
+        .nav-page.active {
+          display: block;
+          /* Show only the active page section */
+        }
+      </style>
   </head>
 
-  <body>
+  <body class="body">
     <header class="header">
 
       <input type="checkbox" id="check" />
@@ -49,19 +81,27 @@
       </a>
 
       <nav class="navbar nav">
-        <a href="dashboard/dashboard.html" class="dashboard" id="dashboard"></a>
-        <a href="dashboard/dashboard.html" style="--i:1;" class="dashboard" id="dashboard">Dashboard</a>
+        <a href="./dashboard/dashboard.html" class="dashboard" id="dashboard"></a>
+        <a href="./dashboard/dashboard.html" class="dashboard" id="dashboard"
+          onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Dashboard</a>
         <a href="index.html" class="nav-page active" id="navHomePage" onclick="showPage('navHomePage')">Home</a>
-        <a href="pages/Investa/about.html" class="nav-page active" id="navAboutPage"
+        <a href="./Investa/about.html" class="nav-page active" id="navAboutPage"
           onclick="showPage('navAboutPage')">About</a>
-        <a href="pages/Investa/project.html" class="nav-page active" id="navProjectPage"
+        <a href="./Investa/project.html" class="nav-page active" id="navProjectPage"
           onclick="showPage('navProjectPage')">Project</a>
-        <a href="pages/Investa/service.html" class="nav-page active" id="navServicesPage"
+        <a href="../index/Investa/service.html" class="nav-page active" id="navServicesPage"
           onclick="showPage('navServicesPage')">Services</a>
-        <a href="pages/Investa/contact.html" class="nav-page active" id="navContactPage"
+        <a href="./Investa/contact.html" class="nav-page active" id="navContactPage"
           onclick="showPage('navContactPage')">Contact</a>
+        <a href="#" class="navLoginPage" id="ido1">Login</a>
 
-        <a href="/" class="nav_search" id="navSearch">
+        <a href="#">
+          <button href="#" class="nav_theme-btn">
+            <i class="uil uil-moon"></i>
+          </button>
+        </a>
+
+        <a href="#" class="nav_search" id="navSearch">
           <i class="uil uil-search"></i>
           <input type="search" placeholder="Search" class="nav-page" />
         </a>
@@ -78,7 +118,7 @@
       <!-- list -->
       <div class="list">
         <div class="item">
-          <img src=".github/workflows/images/img.jpg" alt="" />
+          <img src="images/images/img.jpg" alt="" />
           <div class="content">
             <div class="author">Welcome To Blue Veltas.</div>
             <div class="title">Meet Blue Veltas.</div>
@@ -89,14 +129,17 @@
               monitoring of your funds is assured!
             </div>
             <div class="buttons">
-              <a href="pages/Investa/index.html"><button type="button">Learn More</button></a>
-              <a href="login.html"><button type="button">Subscribe</button></a>
+              <a href="./Investa/index.html"><button type="button"
+                  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Learn
+                  More</button></a>
+              <a href="#"><button type="button" onclick="document.getElementById('id01').style.display='block'"
+                  style="width:auto;">Subscribe</button></a>
             </div>
           </div>
         </div>
 
         <div class="item">
-          <img src="images/img.jpg" alt="" />
+          <img src="images/images/img.jpg" alt="" />
           <div class="content">
             <div class="author">Welcome To Blue Veltas.</div>
             <div class="title">Invest and Grow With Velta Capitals.</div>
@@ -105,14 +148,17 @@
               Conventional trading strategies will only bring you conventional trading results! Is that what you want?
             </div>
             <div class="buttons">
-              <a href="pages/Investa/index.html"><button type="button">See More</button></a>
-              <a href="#"><button type="button">Subscribe</button></a>
+              <a href="./Investa/index.html"><button type="button"
+                  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">See
+                  More</button></a>
+              <a href="#"><button type="button" onclick="document.getElementById('id02').style.display='block'"
+                  style="width:auto;">Subscribe</button></a>
             </div>
           </div>
         </div>
 
         <div class="item">
-          <img src="images/img.jpg" alt="" />
+          <img src="images/images/img.jpg" alt="" />
           <div class="content">
             <div class="author">Welcome To Blue Veltas.</div>
             <div class="title">New standard in market investment.</div>
@@ -121,14 +167,17 @@
               trusted destination for traders worldwide, we simplify the sophisticated ways of markets investment.
             </div>
             <div class="buttons">
-              <a href="pages/Investa/index.html"><button type="button">See More</button></a>
-              <a href="#"><button type="button">Subscribe</button></a>
+              <a href="./Investa/index.html"><button type="button"
+                  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">See
+                  More</button></a>
+              <a href="#"><button type="button" onclick="document.getElementById('id01').style.display='block'"
+                  style="width:auto;">Subscribe</button></a>
             </div>
           </div>
         </div>
 
         <div class="item">
-          <img src="images/img.jpg" alt="" />
+          <img src="images/images/img.jpg" alt="" />
           <div class="content">
             <div class="author">Welcome To Blue Veltas.</div>
             <div class="title">Always Active To Give YOu The Best</div>
@@ -138,8 +187,11 @@
               choose a plan of your choice.
             </div>
             <div class="buttons">
-              <a href="pages/Investa/index.html"><button type="button">See More</button></a>
-              <a href="#"><button type="button">Subscribe</button></a>
+              <a href="./Investa/index.html"><button type="button"
+                  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">See
+                  More</button></a>
+              <a href="#"><button type="button" onclick="document.getElementById('id01').style.display='block'"
+                  style="width:auto;">Subscribe</button></a>
             </div>
           </div>
         </div>
@@ -148,46 +200,51 @@
       <!-- thumbnail -->
       <div class="thumbnail">
         <div class="item">
-          <img src="images/img1.jpg" alt="" />
+          <img src="images/images/img1.jpg" alt="" />
           <div class="content">
             <div class="title">DIGITAL CURRENCY</div>
             <div class="des">
               <div>For more info. click on the down button</div>
-              <a href="Crypto Market – Cryptocurrency Market Place_files/crypto.html"><button type="button">See
+              <a href="./Crypto Market – Cryptocurrency Market Place_files/about-crypto.html"><button type="button"
+                  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">See
+                  More</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/images/img2.jpg" alt="" />
+          <div class="content">
+            <div class="title">REAL ESTATE</div>
+            <div class="des">
+              <div>For more info. click on the down button</div>
+              <a href="./Makaan/Makaan"><button type="button"
+                  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">See
                   More</button></a>
             </div>
           </div>
         </div>
 
         <div class="item">
-          <img src="images/img2.jpg" alt="" />
-          <div class="content">
-            <div class="title">REAL ESTATE</div>
-            <div class="des">
-              <div>For more info. click on the down button</div>
-              <a href="pages/Makaan/Makaan"><button type="button">See More</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <img src="images/img4.jpg" alt="" />
+          <img src="images/images/img4.jpg" alt="" />
           <div class="content">
             <div class="title">MINING</div>
             <div class="des">
               <div>For more info. click on the down button</div>
-              <a href="pages/JobEntry/JobEntry"><button type="button">See More</button></a>
+              <a href="./JobEntry/JobEntry"><button type="button"
+                  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">See
+                  More</button></a>
             </div>
           </div>
         </div>
 
         <div class="item">
-          <img src="images/img3.jpg" alt="" />
+          <img src="images/images/img3.jpg" alt="" />
           <div class="content">
             <div class="title">BUSINESS ADVISERS</div>
             <div class="des">
               <div>For more info. click on the down button</div>
-              <a href="pages/consulting-website-template/consulting-website-template"><button type="button">See
+              <a href="./consulting-website-template/consulting-website-template"><button type="button"
+                  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">See
                   More</button></a>
             </div>
           </div>
@@ -205,7 +262,122 @@
       <!-- time -->
       <div class="time"></div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Start Login  Form -->
+
+      <div class="body">
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"></button>
+
+        <div id="id01" class="modal">
+
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+              <img src="./images/smiling-young-man-illustration_1308-174669.avif" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="login1">Login</div>
+
+            <p class="welcome-back" style="text-align: center; font-weight: bold; font-style: italic; color: #f1683a;">
+              Welcome back</p>
+
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+
+              <div class="container">
+                <span>Don't have an account?</span>
+                <span class="psw"><a href="#" onclick="document.getElementById('id02').style.display='block'"
+                    style="width:auto;">Sign up</a></span>
+              </div>
+            </div>
+
+
+          </form>
+        </div>
+        <!-- </div> -->
+        <!-- End Login  Form -->
+
+
+
+        <!-- Start Signup  Form -->
+        <!-- <div class="body"> -->
+        <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"></button>
+
+        <div id="id02" class="modal">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+          <form class="modal-content" action="/action_page.php">
+            <div class="container">
+
+              <div class="imgcontainer">
+                <a href="index.html" class="close" title="Close Modal">&times;</a>
+                <!-- <img src="./images/smiling-young-man-illustration_1308-174669.avif" alt="Avatar" class="avatar"> -->
+              </div>
+
+              <div class="login2">Sign Up</div>
+
+              <p style="text-align: center; font-weight: bold; font-style: italic; color: #f1683a;">Please fill in
+                this form to create
+                an account.</p>
+              <hr>
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+              <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+
+              <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+              <div class="container">
+                <span>Already have an account?</span>
+                <span class="psw" id="id01"><a href="#" onclick="document.getElementById('id01').style.display='block'"
+                    style="width:auto;">Login</a></span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <!-- End Signup  Form -->
     </div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -235,9 +407,21 @@
       }
     </script>
 
-    <!-- <script src="../app.js"></script> -->
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script src="./dashboard/dashboard.js"></script>
     <script src="main.js"></script>
   </body>
 
 </html>
-
