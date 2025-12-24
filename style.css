@@ -1087,7 +1087,7 @@ nav {
 /* Carousel */
 .carousel {
   width: 100vw;
-  height: 100vh;
+  height: 92vh;
   overflow: hidden;
   top: -100%;
   position: relative;
@@ -2439,6 +2439,7 @@ hr {
   }
 } */
 /* End Sign Up Form */
+
 
 
 
